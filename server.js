@@ -2,7 +2,8 @@ var express = require('express'),
     Routes = require('./server/routes'),
     config = require('./server/config/config'),
     bodyParser = require('body-parser'),
-    app = express();
+    app = express(),
+	global.__BASE__ = __dirname;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
