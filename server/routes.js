@@ -1,4 +1,5 @@
-var config = require(__BASE__ + './config/config');
+var config = require(__BASE__ + '/server/config/config');
+var routes = require(__BASE__ + '/server/routes/index');
 var nodemailer = require('nodemailer');
 var generator = require("xoauth2").createXOAuth2Generator({
 			        user: config.nodemailer.user,
