@@ -1,4 +1,4 @@
-var config = require('./config/config');
+var config = require(__BASE__ + '/server/config/config');
 var nodemailer = require('nodemailer');
 var generator = require("xoauth2").createXOAuth2Generator({
 			        user: config.nodemailer.user,
