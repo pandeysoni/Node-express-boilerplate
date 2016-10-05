@@ -14,7 +14,7 @@ npm install
 
 Run the following command in root directory of an app in command prompt.
 
-node server.js
+npm start
 
 You can see the port number in command prompt after sucessfull run
 

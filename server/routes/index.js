@@ -1,5 +1,4 @@
 var config = require(__BASE__ + '/server/config/config');
-var routes = require(__BASE__ + '/server/routes/index');
 var nodemailer = require('nodemailer');
 var generator = require("xoauth2").createXOAuth2Generator({
 			        user: config.nodemailer.user,
@@ -39,11 +38,11 @@ var sendMail = function(data, res){
 	    }
 	});
 };
- 
 
 
-module.exports = function(app, passport){
-	// API Server Endpoints
-	app.post('/send', routes.sendMail);
+module.exports = {
+	sendMail: function(req, res){
+	  // send mail with defined transport object 
+	  sendMail(req.body, res);
+	});
 }
-
