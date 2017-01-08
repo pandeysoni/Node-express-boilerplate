@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 
 require('./server/routes')(app);
 
-var port = config.server.port;
+var port = process.env.PORT||config.server.port;
 
-app.listen(process.env.PORT || port);
+app.listen(port);
 
 console.log('App started on port ' + port);
