@@ -10,6 +10,9 @@
     "async": "^1.4.2",
     "express": "^4.10.6",
   },
+  "scripts": {
+	"start": "node app.js"
+  },
   "author": {
     "name": "sonipandey",
     "email": "sonipandey.71@gmail.com"
