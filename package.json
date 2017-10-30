@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "async": "^1.4.2",
-    "express": "^4.10.6",
+    "express": "^4.10.6"
   },
   "author": {
     "name": "sonipandey",
